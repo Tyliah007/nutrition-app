@@ -304,3 +304,5 @@ export async function getTopFoods(
     throw error;
   }
 }
+
+export { sql };
