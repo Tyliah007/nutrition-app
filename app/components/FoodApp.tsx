@@ -1,5 +1,5 @@
 // app/components/FoodApp.tsx
-'use client';
+"use client";
 
 import React, { useState, useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';

@@ -1,11 +1,10 @@
 // app/api/foods/search/route.ts
 import { NextRequest, NextResponse } from 'next/server';
-import { sql } from '@/lib/db';
-import { upsertFood, insertNutrient } from '@/lib/db';
+import { sql, upsertFood, insertNutrient} from '@/lib/db';
 import { USDAFoodSearchResponse } from '@/lib/types';
 
 const USDA_API_KEY = process.env.USDA_API_KEY || 'DEMO_KEY';
-const USDA_BASE_URL = `https://api.nal.usda.gov/fdc/v1/${USDA_API_KEY}`;
+const USDA_BASE_URL = `https://api.nal.usda.gov/fdc/v1/`;
 
 export async function POST(request: NextRequest) {
   try {
